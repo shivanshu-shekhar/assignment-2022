@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  width: 600px;
+  padding: 10px 244px 244px 244px;
+}
+
+.form-field {
+  width: 600px;
+  border: 1px solid black;
+}
+
+.container {
+  margin: 5px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.main-label {
+  font-weight: bold;
+  border: 1px solid black;
+  width: 120px;
+}
+
+.secondary-label {
+  border: 1px solid black;
+  width: 124px;
+  text-align: left;
+}
+
+#firstName, #lastName, #phoneNumber, #address {
+  background-color: rgb(247, 247, 180);
+}
+
+.astrick::after {
+  content: " *";
+  color: red;
+}
+
+.text-field {
+  text-align: left;
+  border: 1px solid black;
+  width: 330px;
+}
+

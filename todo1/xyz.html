@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking of css files -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./xyz.css" />
+    <title>Q1</title>
+  </head>
+  <body>
+    <p>
+      Question: 1)Create a registration form for XYZ University. The form should
+      look as shown in the image below.
+    </p>
+    <!-- the form starts -->
+    <section class="form-field">
+      <form class="registration-form">
+        <div class="container">XYZ University Student Registration</div>
+        <!-- 3 tables inside one table to get desired result -->
+        <table class="main-table">
+          <table class="personal-details">
+            <tr>
+              <td rowspan="4" class="main-label">Personal Details</td>
+              <td class="secondary-label astrick">First Name</td>
+              <td class="text-field">
+                <input type="text" maxlength="10" id="firstName" required />
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label astrick">Last Name</td>
+              <td class="text-field">
+                <input type="text" maxlength="10" id="lastName" required />
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label astrick">Date of Birth</td>
+              <td class="text-field">
+                <input
+                  type="text"
+                  id="dateOfBirth"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label">Gender</td>
+              <td class="text-field">
+                <!-- use of radio buttons -->
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="male"
+                  checked="checked"
+                />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+              </td>
+            </tr>
+          </table>
+
+          <table class="academic-details">
+            <tr>
+              <!-- use of drop down list -->
+              <td rowspan="4" class="main-label">Academic Details</td>
+              <td class="secondary-label">Degree</td>
+              <td class="text-field">
+                <select name="degree" id="degree">
+                  <option value="bachelors">Bachelors</option>
+                  <option value="masters" selected>Masters</option>
+                  <option value="doctarate">Doctarate</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label astrick">Specialization</td>
+              <td class="text-field">
+                <input
+                  type="text"
+                  maxlength="40"
+                  id="specialization"
+                  value="English Literature"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label">Mode of instuction</td>
+              <td class="text-field">
+                <!-- use of checkboxes -->
+                <input type="checkbox" id="classroom" checked="checked" />
+                <label for="classroom">Classroom</label>
+                <input type="checkbox" id="online" />
+                <label for="online">Online</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="secondary-label astrick">Current GPA</td>
+              <td class="text-field">
+                <input
+                  type="number"
+                  max="5"
+                  id="currentGpa"
+                  step="0.1"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+
+          <table class="contact-details">
+            <tr>
+              <td rowspan="5" class="main-label">Contact Details</td>
+              <td class="secondary-label astrick">Phone Number</td>
+              <td class="text-field">
+                <input type="tel" maxlength="10" id="phoneNumber" required />
+              </td>
+            </tr>
+            <tr>
+              <td rowspan="4" class="secondary-label astrick">Address</td>
+              <td rowspan="4" class="text-field">
+                <textarea
+                  required
+                  name="address"
+                  rows="4"
+                  cols="38"
+                  maxlength="160"
+                  id="address"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+        </table>
+
+        <div class="container">
+          <label for="confirmation"
+            >I assure all the details entered are correct:</label
+          >
+          <input type="checkbox" id="confirmation" checked="checked" />Yes
+        </div>
+
+        <div class="container">
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
