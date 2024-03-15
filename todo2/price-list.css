@@ -1,0 +1,18 @@
+#mainTable, .heading, td {
+  border: 1px solid black
+}
+
+td {
+  text-align: left;
+}
+
+body {
+  text-align: center;
+  width: 1000px;
+  padding: 10px 244px 244px 244px;
+}
+
+.bold-center {
+  font-weight: bold;
+  text-align: center;
+}
