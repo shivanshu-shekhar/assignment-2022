@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fruits.css" />
+    <title>Q8</title>
+  </head>
+
+  <body>
+    <form>
+      <button id="btnAdd" onclick="addFruit(event)">Add Element</button>
+      <button id="btnRemove" onclick="removeFruit(event)">
+        Remove Element
+      </button>
+      <button id="btnRemoveAll" onclick="removeAllFruits(event)">
+        Remove All
+      </button>
+      <button id="btnUpper" onclick="displayUpper(event)">
+        Display in Uppercase
+      </button>
+      <button id="btnLower" onclick="displayLower(event)">
+        Display in Lowercase
+      </button>
+      <input id="inputFruit" type="text" placeholder="Enter a fruit" />
+    </form>
+    <ul id="fruitList"></ul>
+    <button id="btnSubmit" onclick="submit(event)">Submit</button>
+    <div id="finalList"></div>
+    <script src="fruits.js"></script>
+  </body>
+</html>

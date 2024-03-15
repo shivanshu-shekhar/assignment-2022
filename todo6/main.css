@@ -1,0 +1,38 @@
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* Table head styles */
+table tr {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+thead {
+  border-bottom: 3px solid #ccc;
+  /* border-top: 1px solid #ccc; */
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+}
+
+/* Delete button styles */
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 6px;
+}
+
+tbody tr {
+  border-bottom: 0;
+}
