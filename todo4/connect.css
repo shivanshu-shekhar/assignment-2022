@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(13, 248, 244);
+  padding: 10px 30px;
+}
+
+p {
+  margin: 0px;
+}
+
+.send-request-font {
+  color: darkblue;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 55% 40%;
+}
+
+.heading {
+  margin: 0 0 40px 0;
+}
+
+.form-section {
+  background-color: white;
+  padding: 20px 30px 30px 40px;
+}
+
+form div {
+  display: inline-block;
+  margin: 10px 100px 10px 0;
+}
+
+form p {
+  padding: 5px;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid gainsboro;
+}
+
+button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  box-shadow: 2px 3px 12px blue;
+}
+
+.reach-us {
+  padding: 20px 30px;
+  background-color: darkblue;
+  color: white;
+}
+.reach-us p {
+  display: inline-block;
+}
+.reach-us div {
+  padding: 10px 0;
+}
+.reach-us div p {
+  margin: 0 20px 10px 0;
+}
+
+.location {
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.address {
+  vertical-align: 30px;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}/*# sourceMappingURL=connect.css.map */
